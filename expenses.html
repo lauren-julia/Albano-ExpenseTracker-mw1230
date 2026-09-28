@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses - Mini Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Mini Expense Tracker</div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="expenses.html">Expenses</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="header-actions">
+      <h2 class="page-title">Expense List</h2>
+      <a href="expense-form.html" class="btn-add">+ Add Expense</a>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Expense</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="expenseTableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="pagination-container">
+      <span class="page-info" id="pageInfo">Page 1 of 1</span>
+      <div class="pagination-buttons">
+        <button class="btn-page" id="prevPageBtn"> < </button>
+        <button class="btn-page" id="nextPageBtn"> > </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

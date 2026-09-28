@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Mini Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Mini Expense Tracker</div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="expenses.html">Expenses</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="header-actions">
+      <h2 class="page-title">Dashboard</h2>
+      <a href="expense-form.html" class="btn-add">+ Add Expense</a>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-title">Total Spent</span>
+        <span class="stat-value" id="totalSpentStat">$0.00</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-title">Top Category</span>
+        <span class="stat-value" id="topCategoryStat">-</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Form - Mini Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Mini Expense Tracker</div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="expenses.html">Expenses</a>
+    </div>
+  </nav>
+
+  <div class="container-narrow">
+    <div class="card-form">
+      <h2 class="form-title" id="formHeading">Add New Expense</h2>
+      
+      <form id="expenseForm">
+        <div class="form-group">
+          <label for="name">Expense Name</label>
+          <input type="text" id="name" placeholder="e.g. Grocery shopping" required>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount (₱)</label>
+          <input type="number" id="amount" step="0.01" placeholder="0.00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="" disabled selected>Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="btn-group">
+          <a href="expenses.html" class="btn-cancel">Cancel</a>
+          <button type="submit" class="btn-submit">Save Expense</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
